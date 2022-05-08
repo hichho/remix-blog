@@ -1,20 +1,15 @@
-import {useLocation} from "react-router";
-import {useNavigate} from "remix";
-
+import { LinksFunction, useNavigate } from "remix";
+import stylesUrl from "../styles/index.css";
+export let links: LinksFunction = () => {
+    return [{ rel: "stylesheet", href: stylesUrl }];
+};
 export default function Index(props: any) {
-
-    const navigate =  useNavigate();
-
+    const navigate = useNavigate();
     setTimeout(() => {
-        // navigate('/blog')
-    }, 1000)
-
-    const handleClick = () => {
-    }
-
+        goBlog()
+    }, 4000)
+    const goBlog = () => navigate('/blog');
     return (
-        <div style={{fontFamily: "system-ui, sans-serif", lineHeight: "1.4"}}>
-            <h1 onClick={handleClick}>My Blog</h1>
-        </div>
+        <span onClick={goBlog}>Hichho's Blog</span>
     );
 }
