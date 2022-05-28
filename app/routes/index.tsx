@@ -1,15 +1,22 @@
-import { LinksFunction, useNavigate } from "remix";
+import { useNavigate} from "remix";
+import Layout from "~/components/Layout";
 import stylesUrl from "../styles/index.css";
-export let links: LinksFunction = () => {
-    return [{ rel: "stylesheet", href: stylesUrl }];
+import font from 'Montserrat-Black.ttf'
+
+export let links = () => {
+    return [{rel: "stylesheet", href: stylesUrl},
+        {rel: "stylesheet", href: font}];
 };
-export default function Index(props: any) {
+
+export default function Index() {
     const navigate = useNavigate();
-    setTimeout(() => {
-        goBlog()
-    }, 4000)
-    const goBlog = () => navigate('/blog');
+    const goBlog = () => {
+        console.log(123)
+        // navigate('/blog')
+    };
     return (
-        <span onClick={goBlog}>Hichho's Blog</span>
+        <Layout>
+        </Layout>
+
     );
 }

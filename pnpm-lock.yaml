@@ -11,6 +11,7 @@ specifiers:
   concurrently: ^7.0.0
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-switch: ^6.0.0
   rehype-highlight: ^5.0.2
   remix: ^1.1.1
   tailwindcss: ^3.0.15
@@ -22,6 +23,7 @@ dependencies:
   '@remix-run/vercel': registry.npmmirror.com/@remix-run/vercel/1.5.1_sfoxds7t5ydpegc3knd667wn6m
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
+  react-switch: registry.npmmirror.com/react-switch/6.0.0_sfoxds7t5ydpegc3knd667wn6m
   rehype-highlight: registry.npmmirror.com/rehype-highlight/5.0.2
   remix: registry.npmmirror.com/remix/1.5.1
 
@@ -5566,6 +5568,16 @@ packages:
         optional: true
     dev: true
 
+  registry.npmmirror.com/prop-types/15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prop-types/-/prop-types-15.8.1.tgz}
+    name: prop-types
+    version: 15.8.1
+    dependencies:
+      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
+      object-assign: registry.npmmirror.com/object-assign/4.1.1
+      react-is: registry.npmmirror.com/react-is/16.13.1
+    dev: false
+
   registry.npmmirror.com/property-information/6.1.1:
     resolution: {integrity: sha512-hrzC564QIl0r0vy4l6MvRLhafmUowhO/O3KgVSoXIbbA2Sz4j8HGpJc6T2cubRVwMwpdiG/vKGfhT4IixmKN9w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/property-information/-/property-information-6.1.1.tgz}
     name: property-information
@@ -5689,6 +5701,12 @@ packages:
       scheduler: registry.npmmirror.com/scheduler/0.20.2
     dev: false
 
+  registry.npmmirror.com/react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz}
+    name: react-is
+    version: 16.13.1
+    dev: false
+
   registry.npmmirror.com/react-router-dom/6.3.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-router-dom/-/react-router-dom-6.3.0.tgz}
     id: registry.npmmirror.com/react-router-dom/6.3.0
@@ -5713,6 +5731,20 @@ packages:
     dependencies:
       history: registry.npmmirror.com/history/5.3.0
       react: registry.npmmirror.com/react/17.0.2
+
+  registry.npmmirror.com/react-switch/6.0.0_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-QV3/6eRK5/5epdQzIqvDAHRoGLbCv/wDpHUi6yBMXY1Xco5XGuIZxvB49PHoV1v/SpEgOCJLD/Zo43iic+aEIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-switch/-/react-switch-6.0.0.tgz}
+    id: registry.npmmirror.com/react-switch/6.0.0
+    name: react-switch
+    version: 6.0.0
+    peerDependencies:
+      react: ^15.3.0 || ^16.0.0 || ^17.0.0
+      react-dom: ^15.3.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      prop-types: registry.npmmirror.com/prop-types/15.8.1
+      react: registry.npmmirror.com/react/17.0.2
+      react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
+    dev: false
 
   registry.npmmirror.com/react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react/-/react-17.0.2.tgz}

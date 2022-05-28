@@ -15,7 +15,7 @@ export const links: LinksFunction = () => {
 }
 
 export const meta: MetaFunction = () => {
-  return { title: "Hichho" };
+  return { title: "hichho's blog" };
 };
 
 export default function App() {
