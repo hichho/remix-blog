@@ -1,41 +1,58 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     min-height: 100vh;
 }
-.dark{
-    min-width:100vw;
+
+.dark {
+    min-width: 100vw;
     min-height: 100vh;
     background: #292c34;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:white;
+    color: white;
+    padding: 0 24px;
 }
-.light{
-    min-width:100vw;
+
+.light {
+    min-width: 100vw;
     min-height: 100vh;
     background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:black;
+    color: black;
+    padding: 0 24px;
 }
-.head{
-    width:100%;
-    background: rgba(12,12,12,0.4);
+
+.head {
+    width: 100%;
     display: flex;
-    max-width: 720px;
+    max-width: 700px;
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
     margin-top: 24px;
 }
-.title{
-    font-size: 20px;
-    font-family: "Montserrat, sans-serif";
-    src: url("/mon.woff2") format("Montserrat, sans-serif"),
-    url("/mon.woff2") format("Montserrat, sans-serif");
 
-    /*src: url("../mirr2.woff") format("Montserrat, sans-serif"),*/
-    /*url("../mir2r.woff") format("Montserrat, sans-serif");*/
+.title {
+    font-size: 30px;
+    font-family: cursive;
+}
+.introduce{
+    width:100%;
+    max-width: 700px;
+    display: flex;
+}
+.avatar {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 100%;
+}
+.introduce-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left:12px;
 }
