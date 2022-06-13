@@ -47,76 +47,76 @@ export default function Index() {
             <div className={theme}>
                 <div className={'head'}>
                     <span className={'title'}>hichho</span>
-                    <ReactSwitch
-                        checked={theme === 'light'}
-                        onChange={(value) => {
-                            console.log(value)
-                            if (value) {
-                                setTheme('light')
-                            } else {
-                                setTheme('dark')
-                            }
-                        }}
-                        handleDiameter={28}
-                        offColor="#141414"
-                        offHandleColor="#282828"
-                        onColor="#E6E6E6"
-                        onHandleColor="#C8C8C8"
-                        height={40}
-                        width={70}
-                        borderRadius={6}
-                        activeBoxShadow="0px 0px 1px 2px #fffc35"
-                        uncheckedIcon={
-                            <div
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    height: "100%",
-                                    fontSize: 15,
-                                    color: "orange",
-                                    paddingRight: 2
-                                }}
-                            >
-                                🦉
-                            </div>
-                        }
-                        checkedIcon={
-                            <div
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    height: "100%",
-                                    color: "red",
-                                    fontSize: 18
-                                }}
-                            >
-                                🏝
-                            </div>
+                    {/*<ReactSwitch*/}
+                    {/*    checked={theme === 'light'}*/}
+                    {/*    onChange={(value) => {*/}
+                    {/*        console.log(value)*/}
+                    {/*        if (value) {*/}
+                    {/*            setTheme('light')*/}
+                    {/*        } else {*/}
+                    {/*            setTheme('dark')*/}
+                    {/*        }*/}
+                    {/*    }}*/}
+                    {/*    handleDiameter={28}*/}
+                    {/*    offColor="#141414"*/}
+                    {/*    offHandleColor="#282828"*/}
+                    {/*    onColor="#E6E6E6"*/}
+                    {/*    onHandleColor="#C8C8C8"*/}
+                    {/*    height={40}*/}
+                    {/*    width={70}*/}
+                    {/*    borderRadius={6}*/}
+                    {/*    activeBoxShadow="0px 0px 1px 2px #fffc35"*/}
+                    {/*    uncheckedIcon={*/}
+                    {/*        <div*/}
+                    {/*            style={{*/}
+                    {/*                display: "flex",*/}
+                    {/*                justifyContent: "center",*/}
+                    {/*                alignItems: "center",*/}
+                    {/*                height: "100%",*/}
+                    {/*                fontSize: 15,*/}
+                    {/*                color: "orange",*/}
+                    {/*                paddingRight: 2*/}
+                    {/*            }}*/}
+                    {/*        >*/}
+                    {/*            🦉*/}
+                    {/*        </div>*/}
+                    {/*    }*/}
+                    {/*    checkedIcon={*/}
+                    {/*        <div*/}
+                    {/*            style={{*/}
+                    {/*                display: "flex",*/}
+                    {/*                justifyContent: "center",*/}
+                    {/*                alignItems: "center",*/}
+                    {/*                height: "100%",*/}
+                    {/*                color: "red",*/}
+                    {/*                fontSize: 18*/}
+                    {/*            }}*/}
+                    {/*        >*/}
+                    {/*            🏝*/}
+                    {/*        </div>*/}
 
-                        }
-                        uncheckedHandleIcon={
-                            <div
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    height: "100%",
-                                    fontSize: 20
-                                }}
-                            >
-                                🌙
-                            </div>
-                        }
-                        checkedHandleIcon={
-                            <svg viewBox="0 0 10 10" height="100%" width="100%" fill="yellow">
-                                <circle r={3} cx={5} cy={5}/>
-                            </svg>
-                        }
-                        className="react-switch"
-                        id="small-radius-switch"
-                    />
+                    {/*    }*/}
+                    {/*    uncheckedHandleIcon={*/}
+                    {/*        <div*/}
+                    {/*            style={{*/}
+                    {/*                display: "flex",*/}
+                    {/*                justifyContent: "center",*/}
+                    {/*                alignItems: "center",*/}
+                    {/*                height: "100%",*/}
+                    {/*                fontSize: 20*/}
+                    {/*            }}*/}
+                    {/*        >*/}
+                    {/*            🌙*/}
+                    {/*        </div>*/}
+                    {/*    }*/}
+                    {/*    checkedHandleIcon={*/}
+                    {/*        <svg viewBox="0 0 10 10" height="100%" width="100%" fill="yellow">*/}
+                    {/*            <circle r={3} cx={5} cy={5}/>*/}
+                    {/*        </svg>*/}
+                    {/*    }*/}
+                    {/*    className="react-switch"*/}
+                    {/*    id="small-radius-switch"*/}
+                    {/*/>*/}
                 </div>
                 <div className={'introduce'}>
                     <img src={'./avatar.jpg'} alt={''} className={'avatar'}/>

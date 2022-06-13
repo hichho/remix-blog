@@ -1,4 +1,3 @@
-import styles from 'highlight.js/styles/github-dark-dimmed.css';
 import { LinksFunction, Outlet } from 'remix';
 
 export const links: LinksFunction = () => {
