@@ -1,6 +1,6 @@
-import {useNavigate, LoaderFunction, useLoaderData, Link} from "remix";
+import { useNavigate, LoaderFunction, useLoaderData, Link } from "remix";
 import stylesUrl from "../styles/index.css";
-import {createContext, useState} from "react";
+import { createContext, useState } from "react";
 import ReactSwitch from "react-switch";
 import * as OnePost from "~/routes/blog/one-post.mdx";
 
@@ -21,7 +21,7 @@ export const loader: LoaderFunction = () => {
 };
 
 export let links = () => {
-    return [{rel: "stylesheet", href: stylesUrl}]
+    return [{ rel: "stylesheet", href: stylesUrl }]
 };
 
 
@@ -119,12 +119,12 @@ export default function Index() {
                     {/*/>*/}
                 </div>
                 <div className={'introduce'}>
-                    <img src={'./avatar.jpg'} alt={''} className={'avatar'}/>
+                    <img src={'./avatar.jpg'} alt={''} className={'avatar'} />
                     <div className={'introduce-text'}>
                         <span>Personal Blog by hichho</span>
                     </div>
                 </div>
-                <ul>
+                {/* <ul>
                     {posts.map((post: any) => (
                         <li key={post.slug}>
                             <Link to={post.slug}>
@@ -135,7 +135,7 @@ export default function Index() {
                             ) : null}
                         </li>
                     ))}
-                </ul>
+                </ul> */}
             </div>
         </Theme.Provider>
     );
